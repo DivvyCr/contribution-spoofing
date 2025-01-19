@@ -1,0 +1,49 @@
+#
+# Spoof the letters "DVC", which are pronounced like "Divvy C."
+#
+
+function spoof_contribution () {
+    # echo \
+       GIT_AUTHOR_DATE=2024-$1-$2T00:00:00.001Z \
+    GIT_COMMITTER_DATE=2024-$1-$2T00:00:00.001Z \
+    git commit --allow-empty -a -m "'$3'"
+}
+
+spoof_contribution 06 24 "D"
+spoof_contribution 06 28 "D"
+spoof_contribution 07 01 "D"
+spoof_contribution 07 02 "D"
+spoof_contribution 07 03 "D"
+spoof_contribution 07 04 "D"
+spoof_contribution 07 05 "D"
+spoof_contribution 07 08 "D"
+spoof_contribution 07 12 "D"
+spoof_contribution 07 15 "D"
+spoof_contribution 07 19 "D"
+spoof_contribution 07 23 "D"
+spoof_contribution 07 24 "D"
+spoof_contribution 07 25 "D"
+
+spoof_contribution 08 05 "V"
+spoof_contribution 08 06 "V"
+spoof_contribution 08 07 "V"
+spoof_contribution 08 14 "V"
+spoof_contribution 08 15 "V"
+spoof_contribution 08 22 "V"
+spoof_contribution 08 28 "V"
+spoof_contribution 08 29 "V"
+spoof_contribution 09 02 "V"
+spoof_contribution 09 03 "V"
+spoof_contribution 09 04 "V"
+
+spoof_contribution 09 17 "C"
+spoof_contribution 09 18 "C"
+spoof_contribution 09 19 "C"
+spoof_contribution 09 23 "C"
+spoof_contribution 09 24 "C"
+spoof_contribution 09 26 "C"
+spoof_contribution 09 27 "C"
+spoof_contribution 09 30 "C"
+spoof_contribution 10 04 "C"
+spoof_contribution 10 07 "C"
+spoof_contribution 10 11 "C"
